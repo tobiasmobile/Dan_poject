@@ -1,0 +1,22 @@
+<ion-view title="Event Details" id="page16" class=" " ng-init="init()">
+    <ion-content padding="false" class=" manual-remove-top-padding has-header">
+        <div class="">
+            <img src="{{eventDetail.event_image_location}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <ion-list id="eventDetails-list12" class=" ">
+            <ion-item class="item-divider " id="eventDetails-list-item-divider12">Tickets</ion-item>
+            <ion-item class="item-icon-right  " id="eventDetails-list-item18" href="#" onclick="window.open('http://www.stubhub.com/', '_system', 'location=yes'); return false;">{{eventDetail.ticket_web}}
+                <span class="item-note">from $50</span>
+                <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            </ion-item>
+            <ion-item class="item-divider " id="eventDetails-list-item-divider13">Venue</ion-item>
+        </ion-list>
+        <div class="item item-body " id="eventDetails-list-item-container6">
+            <p id="eventDetails-markdown8" style="margin-top:0px;color:#000000;" class=" ">{{eventDetail.event_title}}</p>
+            <p id="eventDetails-markdown9" style="margin-top:0px;color:#000000;" class=" ">{{eventDetail.event_venue}}</p>
+            <div class="">
+                <img src="{{eventDetail.event_image_header_bg_location}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

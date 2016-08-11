@@ -1,0 +1,15 @@
+<ion-view title="Events" id="page14" style="background-color:#EFEFF4;" class=" " ng-init="init()">
+    <ion-content padding="true" class=" manual-remove-top-padding has-header">
+        <ion-list id="events-list10" class=" manual-list-fullwidth ">
+            <!--<ion-item class="item-divider " id="events-list-item-divider10">Today: Monday, August 1st</ion-item>-->
+            <ion-item class="item-thumbnail-left item-icon-right  " id="events-list-item8" ng-repeat="item in eventsData" ng-click="goEventDetail(item)">
+                <img src={{item.event_image_location}}>
+                <h2>{{item.event_title}}</h2>
+                <p style="white-space:normal;">{{item.event_venue}}
+                    <br>{{item.event_datetime}}</p>
+                <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            </ion-item>
+          
+        </ion-list>
+    </ion-content>
+</ion-view>
